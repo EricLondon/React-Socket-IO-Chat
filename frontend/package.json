@@ -65,6 +65,7 @@
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
     "react-bootstrap": "^0.32.1",
-    "react-dom": "^15.0.0"
+    "react-dom": "^15.0.0",
+    "socket.io-client": "^2.0.4"
   }
 }
