@@ -1,0 +1,28 @@
+version: '2'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: "node app.js"
+    volumes:
+      - ./backend:/backend
+    ports:
+      - "3000:3000"
+    working_dir: /backend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    command: "npm start"
+    depends_on:
+      - backend
+    environment:
+      - API_HOST=backend
+    links:
+      - backend
+    ports:
+      - "8000:8000"
+    working_dir: /frontend
+    volumes:
+      - ./frontend:/frontend
