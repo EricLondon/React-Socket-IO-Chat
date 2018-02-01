@@ -44,6 +44,7 @@ class ChatRoomComponent extends React.Component {
               placeholder="Enter your message"
               onChange={this.setNewMessage}
               value={this.state.newMessage}
+              autoComplete="off"
             />
           </FormGroup>
           <Button type="submit">Send</Button>

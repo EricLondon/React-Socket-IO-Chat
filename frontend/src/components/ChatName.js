@@ -24,6 +24,7 @@ class ChatNameComponent extends React.Component {
             label="Name"
             placeholder="Enter your name"
             onChange={this.setName}
+            autoComplete="off"
           />
         </FormGroup>
         <Button type="submit">Join Chat</Button>
