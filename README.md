@@ -12,3 +12,5 @@ cd React-Socket-IO-Chat
 
 # Browse to http://localhost:8000
 ```
+
+See blog post here: http://ericlondon.com/2018/02/01/integrate-socket.io-and-react-components-to-create-a-simple-chat-client-app.html
