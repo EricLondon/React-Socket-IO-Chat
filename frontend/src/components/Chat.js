@@ -1,9 +1,9 @@
-import React from 'react';
-import { Grid } from 'react-bootstrap';
+import React from 'react'
+import { Grid } from 'react-bootstrap'
 import ChatName from './ChatName.js'
 import ChatRoom from './ChatRoom.js'
 
-require('./Chat.css');
+require('./Chat.css')
 
 class ChatComponent extends React.Component {
 
@@ -13,7 +13,7 @@ class ChatComponent extends React.Component {
       name: null
     }
 
-    this.handleSubmitName = this.handleSubmitName.bind(this);
+    this.handleSubmitName = this.handleSubmitName.bind(this)
   }
 
   render() {
@@ -30,7 +30,7 @@ class ChatComponent extends React.Component {
           />
         }
       </Grid>
-    );
+    )
   }
 
   handleSubmitName(name) {

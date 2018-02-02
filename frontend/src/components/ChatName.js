@@ -1,5 +1,5 @@
-import React from 'react';
-import { FormGroup, ControlLabel, FormControl, Form, Button } from 'react-bootstrap';
+import React from 'react'
+import { FormGroup, ControlLabel, FormControl, Form, Button } from 'react-bootstrap'
 
 class ChatNameComponent extends React.Component {
 
@@ -9,8 +9,8 @@ class ChatNameComponent extends React.Component {
       name: null
     }
 
-    this.setName = this.setName.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.setName = this.setName.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   render() {
@@ -29,18 +29,18 @@ class ChatNameComponent extends React.Component {
         </FormGroup>
         <Button type="submit">Join Chat</Button>
       </Form>
-    );
+    )
   }
 
   setName(event) {
     this.setState({
       name: event.target.value
-    });
+    })
   }
 
   handleSubmit(event) {
-    event.preventDefault();
-    this.props.handleSubmitName(this.state.name);
+    event.preventDefault()
+    this.props.handleSubmitName(this.state.name)
   }
 }
 

@@ -1,6 +1,6 @@
-import React from 'react';
-import { FormGroup, ControlLabel, FormControl, Form, Button } from 'react-bootstrap';
-import io from 'socket.io-client';
+import React from 'react'
+import { FormGroup, ControlLabel, FormControl, Form, Button } from 'react-bootstrap'
+import io from 'socket.io-client'
 import ChatTable from './ChatTable.js'
 
 class ChatRoomComponent extends React.Component {
@@ -13,9 +13,9 @@ class ChatRoomComponent extends React.Component {
       newMessage: ''
     }
 
-    this.socket = io('http://localhost:3000');
-    this.setNewMessage = this.setNewMessage.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.socket = io('http://localhost:3000')
+    this.setNewMessage = this.setNewMessage.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   componentDidMount() {
@@ -52,7 +52,7 @@ class ChatRoomComponent extends React.Component {
 
         <ChatTable messages={this.state.messages} />
       </div>
-    );
+    )
   }
 
   componentWillUnmount() {
@@ -62,11 +62,11 @@ class ChatRoomComponent extends React.Component {
   setNewMessage(event) {
     this.setState({
       newMessage: event.target.value
-    });
+    })
   }
 
   handleSubmit(event) {
-    event.preventDefault();
+    event.preventDefault()
     this.socket.emit('chat', {
       name: this.props.name,
       message: this.state.newMessage,

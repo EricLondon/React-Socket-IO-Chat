@@ -1,5 +1,5 @@
-import React from 'react';
-import { Table } from 'react-bootstrap';
+import React from 'react'
+import { Table } from 'react-bootstrap'
 
 class ChatTableComponent extends React.Component {
 
@@ -19,7 +19,7 @@ class ChatTableComponent extends React.Component {
           )}
         </tbody>
       </Table>
-    );
+    )
   }
 }
 
