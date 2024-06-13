@@ -58,7 +58,7 @@
     "style-loader": "^0.23.1",
     "url-loader": "^0.6.2",
     "webpack": "^1.15.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
     "core-js": "^3.37.1",
