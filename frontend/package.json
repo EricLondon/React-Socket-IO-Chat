@@ -61,7 +61,7 @@
     "webpack-dev-server": "^6.1.0"
   },
   "dependencies": {
-    "core-js": "^3.50.0",
+    "core-js": "^3.51.0",
     "normalize.css": "^8.0.1",
     "react": "^19.3.1",
     "react-bootstrap": "^2.10.10",
